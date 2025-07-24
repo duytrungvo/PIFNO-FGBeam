@@ -1,0 +1,29 @@
+data:
+  name: 'bidirectional FG Beam'
+  BC: 'CF'
+  datapath: '/mnt/sbd1/data/trungvd/data/physics_informed/FGbeam/bi/EB_bi_1025_rng1_powerlaw_height_linear_data5_r06r06f05_test.mat'
+  total_num: 2000
+  offset: 0
+  n_sample: 2000
+  nx: 1025
+  sub: 8
+  in_dim: 2
+  out_dim: 2
+  q: 2.0
+  L: 2.0
+  b: 0.1
+  h: 0.1
+  Em: 14000000.0
+
+model:
+  name: 'fno'
+  layers: [64, 64, 64, 64, 64]
+  modes: [10, 10, 10, 10]
+  fc_dim: 128
+  act: gelu
+  apply_output_transform: 'yes'
+
+test:
+  batchsize: 1
+  ckpt: 'checkpoints/FGbeam/EB_FGbeam-pretrain-eqn.pt'
+  save_dir: 'FGbeam'
