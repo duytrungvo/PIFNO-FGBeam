@@ -6,7 +6,7 @@ Numerical examples examine various types of material distributions and different
 
  ![Problem statement](docs/theory_image_problem_statement2.png)
 
-## Architecture of code
+## Architecture of the code
 ![PIFNO program structure](docs/PIFNO-bidirectionalFGbeam.jpg)
 
 ## Data description
@@ -44,3 +44,15 @@ python3 train_EB_FGbeam.py --config_path configs/test/EB_FGbeam.yaml --mode test
 ## Closed-form solution
 The closed-form solution is provided in "matalb_code/closed_form_solution/main_analytical_solution.m"
 
+## Citation
+If you think that the work of the PIFNO is useful in your research, please consider citing our paper in your manuscript:
+```
+@article{trung2025,
+  title={Physics-informed Fourier neural operator for the bending analysis of bi-directional functionally graded beams with variable cross-sections},
+  author={Duy-Trung Vo, Jaehong Lee},
+  journal={European Journal of Mechanics A/Solids},
+  volume={},
+  pages={},
+  year={2025},
+  publisher={Elsevier}
+}
