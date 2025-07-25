@@ -8,7 +8,7 @@ try:
 except ImportError:
     wandb = None
 
-def train_1d_EB_FGbeam_gpu(model,
+def train_1d_EB_FGbeam(model,
                  train_loader,
                  optimizer,
                  scheduler,

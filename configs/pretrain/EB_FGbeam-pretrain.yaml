@@ -25,7 +25,7 @@ model:
 
 train:
   batchsize: 20
-  epochs: 1000
+  epochs: 200
   milestones: [ 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000,
                 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900]
   base_lr: 0.001
@@ -34,7 +34,6 @@ train:
   bc_loss_l: 0.0
   bc_loss_r: 0.0
   xy_loss: 0.0            # weight loss of datum information
-  balance_scheme: 'sum'
   save_dir: 'FGbeam'
   save_name: 'EB_FGbeam-pretrain-eqn.pt'
   loss_save_name: 'train_loss_history.txt'
